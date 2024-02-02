@@ -26,7 +26,8 @@ class MathUtilsTest {
 
     @Test
     void multiply() {
-        assertEquals(63, MathUtils.multiply(21, 3));
+        assertAll(() -> assertEquals(77, MathUtils.multiply(7, 11)),
+                () -> assertEquals(0, MathUtils.multiply(5, 0)));
     }
 
     @Test
